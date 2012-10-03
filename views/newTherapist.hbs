@@ -1,0 +1,45 @@
+Create a new client
+<form action="/newTherapist" method="post">
+    <div>
+    
+    <label>First Name:</label>
+    <input type="text" name="therapist[firstName]"/><br/>
+    </div><div>
+    
+    <label>Last Name:</label>
+    <input type="text" name="therapist[lastName]"/>
+    </div><div>
+    
+    <label>Email:</label>
+    <input type="text" name="therapist[email]"/>
+    </div><div>
+
+    <label>Username:</label>
+    <input type="text" name="therapist[username]"/>
+    </div><div>
+
+    <label>Password:</label>
+    <input type="text" name="therapist[password]"/>
+    </div><div>
+
+  
+    <input type="hidden" name="therapist[role]" value="Therapist"/>
+    </div><div>
+    
+    
+    <label>Clients:</label>
+    
+    <div id='therapistSelect'>
+
+   		{{#each client}}
+            <label>{{firstName}} {{lastName}}</label>
+    		<input type="checkbox" name="therapist[clients]" value={{_id}} />
+		{{/each}}	
+    </div>
+   
+    </div><div>
+    
+    
+    <input type="submit" value="Save"/>
+    </div>
+</form>

@@ -1,0 +1,87 @@
+body {
+	margin:0px;
+	padding:0px;
+	background-color:#ffffff;
+	background-image:url(../images/bgrdTile.jpg);
+	background-repeat:repeat;
+}
+h1, h2, h3, h4, ul, li, p {
+	margin:0px;
+	padding:0px;
+}
+#level0 {
+	position:relative;
+	margin:auto;
+	padding-left: 50px;
+	width: 80%;
+	min-width: 747px;
+	background-color:#FFFFFF;
+	background-image:url(../images/clsd_left.jpg);
+	background-position:top left;
+	background-repeat:repeat-y;
+}
+#level00 {
+}
+#level000 {
+	background-image:url(../images/headerImage.jpg);
+	background-position:top left;
+	background-repeat:no-repeat;
+	height:92px;
+}
+	#level000 h1 {
+		display: none;
+	}
+#level001 h2{
+	font-size:1.25em;
+	font-style:italic;
+	text-align:center;
+}
+#level002 {
+	background-color:#FFFF00;
+	text-align: center;
+	padding: .2em 0em;
+}
+#level002 ul {
+	list-style:none;
+}
+#level002 ul li {
+	display: inline;
+	padding: 0em 1em 0em 18px;
+	background-image:url(../images/heart.gif);
+	background-position:left;
+	background-repeat:no-repeat;
+}
+#level01 {
+	position:relative;
+}
+#level010 {
+	position:absolute;
+		top: 0;
+		left: 0;
+	width: 200px;
+}
+#level0100 {
+	border: #000000 1px solid;
+	width:200px;
+	margin-bottom: 2em;
+}
+#level0101 {
+	padding-left:2em;
+}
+
+#level0101 ul {
+	list-style:url(../images/heart.gif);
+}
+
+#level011 {
+	margin-left:210px;
+	padding:2em;
+}
+#level011 .block {
+	border: solid #000000 1px;
+	margin:.5em 0em;
+	padding: 1em .5em;
+}
+#level011 .block ul {
+	padding-left: 1.5em;
+}

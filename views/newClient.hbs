@@ -1,0 +1,22 @@
+
+<form enctype="multipart/form-data" action="/newClient" method="post">
+    <div>
+    
+    
+    <input type="text" name="client[firstName]"/><br/>
+    </div>
+    <div>
+
+    <div id='therapistSelect'>
+
+        {{#each therapist}}
+
+        <input type="checkbox" name="client[therapists]" value={{_id}} id={{_id}} />
+        {{/each}}
+
+    </div>
+
+    <input type="submit" value="Save"/>
+
+    </div>
+</form>
