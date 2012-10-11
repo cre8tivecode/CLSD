@@ -12,9 +12,7 @@ module.exports.user = function(app, User) {
         	// Start a new session
         		req.session.userId = user.id;
         		if(user.role === "Admin"){
-          			res.redirect('/admin', {
-                       admin : user
-                    });
+          			res.redirect('/admin')
         		}
         		if(user.role === "Therapist"){
           			res.redirect('/therapistHome');          

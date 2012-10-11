@@ -49,4 +49,25 @@ module.exports.therapist = function(app, User, Client) {
     });
   });
 
-}
+
+    app.get('/editTherapist/:id', function(req, res){
+
+        User.findById(req.params.id, function (err, therapist){
+             res.render('editTherapist', {
+                therapist : therapist
+             });
+        });
+
+    });
+
+    //app.put()
+
+    app.post('/editTherapist', function(req, res){
+        var therapist = new User(req.body.therapist);
+        therapist.save(function(){
+
+            res.redirect('/therapists');
+        });
+    });
+
+};

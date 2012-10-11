@@ -5,10 +5,13 @@ module.exports.admin = function(app, User) {
 
         if(req.session.userId){
             User.findById(req.session.userId, function (err, user){
-
-                res.render('admin', {
-                    admin : user
+                User.where('role',"Therapist").find(function (err, therapist){
+                    res.render('admin', {
+                        therapist : therapist,
+                        admin : user
+                    });
                 });
+
 
             });
 

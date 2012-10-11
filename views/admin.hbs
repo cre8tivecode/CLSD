@@ -1,5 +1,24 @@
-Admin Page
-*list an action table to perform admin actions
-*list a table of therapist and clients
-*add an update profile section to top right header
+<table dir="ltr" width="500" border="1" summary="purpose/structure for speech output">
+  <caption>Therapist(s)
+  </caption>
+  <colgroup width="50%" />
+  <colgroup id="colgroup" class="colgroup" align="center" valign="middle" title="title" width="1*" span="2" style="background:#ddd;" />
+  <thead>
+  <tr>
+    <th scope="col">Name</th>
+    <th scope="col">Username</th>
+    <th scope="col">Role</th>
+  </tr>
+  </thead>
+  <tbody>
+  {{#each therapist}}
+  <tr>
+    <td><a href="/editTherapist/{{id}}">{{firstName}} {{lastName}} {{id}}</a></td>
+    <td>{{username}}</td>
+    <td>{{role}}</td>
+  </tr>
+  {{/each}}
+
+  </tbody>
+</table>
 
