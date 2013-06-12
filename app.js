@@ -81,7 +81,6 @@ require('./models/Admin').Admin(app, Schema, mongoose);
 
 // End Routes //
 
-
 // Handlebars //
 var blocks = {};
 hbs.registerHelper('extend', function(name, context) {
