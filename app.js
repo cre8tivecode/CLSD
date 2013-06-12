@@ -84,9 +84,6 @@ require('./models/Admin').Admin(app, Schema, mongoose);
 
 // Handlebars //
 var blocks = {};
-
-
-
 hbs.registerHelper('extend', function(name, context) {
     var block = blocks[name];
     if (!block) {
@@ -103,7 +100,6 @@ hbs.registerHelper('block', function(name) {
     blocks[name] = [];
     return val;
 });
-
 
 hbs.registerHelper("each_with_index", function(array, fn) {
     var buffer = "";
